@@ -11,7 +11,8 @@
 <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-
+<div>bug money</div>
+<div id="show">bugmoney</div>
 <table> 
 <form>
 <tr> 

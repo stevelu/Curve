@@ -1,4 +1,4 @@
-    	var cash,earn,timeLine,jsonData;
+    	var cash,earn,timeLine,jsonData,bugMoney;
 
         
 require.config({
@@ -34,7 +34,20 @@ require.config({
                     	cash=jsonData.cash;
                     	earn=jsonData.earn;
                     	timeLine=jsonData.time;
+                    	getBug(cash,earn);
                     });
+                    
+                    function getBug(cash,earn){
+                    	var bugMoney=0;
+                    	for(var i=0;i<cash.length;i++){
+                    		if (cash[i]<0)
+                    			if(cash[i]-earn[i]>0)
+                    				{
+                        			bugMoney=bugMoney+parseInt(earn[i]);                       				
+                    				}               		
+                    		}
+                    	$("#show").html(bugMoney);
+                    }
                     
 
                     
