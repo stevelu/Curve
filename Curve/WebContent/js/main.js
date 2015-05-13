@@ -39,7 +39,9 @@ require.config({
                     
                     function getBug(cash,earn){
                     	var bugMoney=0;
+                    	var all=0;
                     	for(var i=0;i<cash.length;i++){
+                    		all=all+earn[i];
                     		if (cash[i]<0)
                     			if(cash[i]-earn[i]>0)
                     				{
@@ -47,6 +49,7 @@ require.config({
                     				}               		
                     		}
                     	$("#show").html(bugMoney);
+                    	$("#all").html(all);
                     }
                     
 

@@ -13,6 +13,8 @@
 <body>
 <div>bug money</div>
 <div id="show">bugmoney</div>
+<div>all money</div>
+<div id="all">bugmoney</div>
 <table> 
 <form>
 <tr> 
